@@ -58,11 +58,15 @@ public static void main(String[] args) {
   
 ```
 
+
 ## Simulation Results
 
-For a simulation with 10,000 runs using 2 dice, refer to the following document:
+For a simulation with 10,000 runs using 5 dice, refer to the following document:
 
-[Simulation Results](document/simulation-for-num-10000-with-2-dice.jpg)
+[Simulation Results](document/simulation-for-num-10000-with-5-dice.jpg)
+
+<img src="document/simulation-for-num-10000-with-5-dice.jpg" width=100% height=100%/>
+
 
 ## License
 
