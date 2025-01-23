@@ -18,7 +18,6 @@ This project simulates a dice game and runs multiple simulations to analyze the 
 The project uses the following dependencies:
 
 - JUnit 5 for testing
-- Mockito for mocking
 - SLF4J and Logback for logging
 
 ## Building the Project

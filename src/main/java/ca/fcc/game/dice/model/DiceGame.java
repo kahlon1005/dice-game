@@ -1,11 +1,10 @@
-
-// DiceGame.java
 package ca.fcc.game.dice.model;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class DiceGame {
   // Number of dice to be used in the game
@@ -49,11 +48,9 @@ public class DiceGame {
 
   // Method to roll a specified number of dice and return the results as a list
   private List<Integer> rollDice(int numDice) {
-    List<Integer> dice = new ArrayList<>();
-    for (int i = 0; i < numDice; i++) {
-      dice.add(getRandom().nextInt(6) + 1);
-    }
-    return dice;
+    return IntStream.range(0, numDice)
+        .mapToObj(i -> getRandom().nextInt(6) + 1)
+        .collect(Collectors.toList());
   }
 
   // Getter method to retrieve the number of dice
