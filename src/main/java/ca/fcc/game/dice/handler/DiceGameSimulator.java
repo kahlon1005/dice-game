@@ -42,12 +42,15 @@ public class DiceGameSimulator {
   }
 
   // Method to print the results of the simulations
+
   private void printResults(Map<Integer, Integer> scoreCounts, double duration) {
     logger.info("Number of simulations was {} using {} dice.", numSimulations, diceGame.getNumDice());
     scoreCounts.forEach((score, count) -> {
       double percentage = (double) count / numSimulations;
-      logger.info("Total {} occurs {} occurred {} times.", score, percentage, count);
+      logger.info("Total {} occurs {} occurred {} times.", score, String.format("%.4f", percentage), count);
     });
     logger.info("Total simulation took {} seconds.", duration);
   }
+
+
 }
