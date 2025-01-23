@@ -24,25 +24,31 @@ The project uses the following dependencies:
 
 To build the project, run the following command:
 
-
+```
+mvn clean install
+```
 
 ## Running the Application
 
 To run the application, use the following command:
 
-
+```
+mvn exec:java -Dexec.mainClass="ca.fcc.game.dice.DiceGameApplication"
+```
 
 ## Running Tests
 
 To run the tests, use the following command:
 
-
+```
+mvn test
+```
 
 ## Customizing the Simulation
 
 You can customize the number of simulations and the number of dice used in the simulation by modifying the `main` method in `DiceGameApplication.java`:
 
-
+public static void main(String[] args) { int numberOfSimulations = 10000; int numberOfDice = 2; DiceGameSimulation simulation = new DiceGameSimulation(numberOfSimulations, numberOfDice); simulation.run(); }
 
 ## Simulation Results
 
