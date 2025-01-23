@@ -48,7 +48,15 @@ mvn test
 
 You can customize the number of simulations and the number of dice used in the simulation by modifying the `main` method in `DiceGameApplication.java`:
 
-public static void main(String[] args) { int numberOfSimulations = 10000; int numberOfDice = 2; DiceGameSimulation simulation = new DiceGameSimulation(numberOfSimulations, numberOfDice); simulation.run(); }
+```
+public static void main(String[] args) {
+    final int numSimulations = 10000; // You can change this value to run a different number of simulations
+    final int numDice = 5; // You can change this value to use a different number of dice
+    final DiceGameSimulator simulator = new DiceGameSimulator(numSimulations, numDice);
+    simulator.runSimulations();
+  }
+  
+```
 
 ## Simulation Results
 
